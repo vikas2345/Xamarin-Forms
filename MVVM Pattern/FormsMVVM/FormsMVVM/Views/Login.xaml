@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormsMVVM.Views.Login">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label x:Name="LblUsername" Text="Username"></Label>
+            <Entry x:Name="EntryUsername" Text="{Binding Username}" Placeholder="Enter Username"></Entry>
+
+            <Label x:Name="LblPassword" Text="Password"></Label>
+            <Entry x:Name="EntryPassword" Text="{Binding Password}" Placeholder="Enter Password" IsPassword="True"></Entry>
+
+            <Button x:Name="BtnLogin" Text="Login" Command="{Binding SubmitCommand}"></Button>
+            <Label x:Name="messageLabel"></Label>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
