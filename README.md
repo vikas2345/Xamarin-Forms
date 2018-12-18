@@ -1,2 +1,2 @@
 # Xamarin-Forms
-Projects built on Xamarin Forms Language
+Projects built on Xamarin Forms
